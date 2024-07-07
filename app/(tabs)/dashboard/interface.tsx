@@ -1,29 +1,26 @@
+import CardWrapper from "@/components/CardWrapper";
 import ParallaxScrollView from "@/components/ParallaxScrollView";
-import ThemedInputText from "@/components/ThemedInputText";
 import { ThemedText } from "@/components/ThemedText";
 import { ThemedView } from "@/components/ThemedView";
 import { Image, StyleSheet } from "react-native";
 
+export default function Interface(){
 
-export default function DashboardPage(){
-
-    return (
-        <ParallaxScrollView headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
+    return(
+        <ParallaxScrollView
+        headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
         headerImage={
-            <Image
-              source={require('@/assets/images/partial-react-logo.png')}
-              style={styles.reactLogo}
-            />
-          }>
+            <Image source={require('@/assets/images/partial-react-logo.png')}
+            style={styles.reactLogo}/>
+        }>
         <ThemedView style={styles.titleContainer}>
-          <ThemedText type="title">LOG IN </ThemedText>
+            <ThemedText type="title">WELCOME AGAIN</ThemedText>
         </ThemedView>
-        <ThemedView style={styles.stepContainer}>
-          <ThemedInputText></ThemedInputText>
-        </ThemedView>
+        <CardWrapper></CardWrapper>
         </ParallaxScrollView>
     )
 }
+
 
 const styles = StyleSheet.create({
     titleContainer: {

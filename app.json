@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "AIEP_TAP_MOBILE",
-    "slug": "AIEP_TAP_MOBILE",
+    "slug": "aiepmobile",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -31,6 +31,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "a7d0bcb3-fc3c-4e1a-865c-af003133442e"
+      }
+    },
+    "owner": "hmnql"
   }
 }
